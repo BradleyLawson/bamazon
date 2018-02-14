@@ -4,6 +4,7 @@
   "description": "CLI using mySQL backend",
   "main": "bamazonCustomer.js",
   "dependencies": {
+    "columnify": "^1.5.4",
     "inquirer": "^5.1.0",
     "mysql": "^2.15.0"
   },

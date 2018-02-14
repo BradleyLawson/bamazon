@@ -3,6 +3,8 @@ var inquirer = require("inquirer");
 //require mysql
 var mysql = require("mysql");
 
+
+
 // connect to mysql
 var connection = mysql.createConnection({
   host: "localhost",
@@ -12,7 +14,7 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "Br@ndn3wm@n",
+  password: "",
   database: "bamazon_db"
 });
 
@@ -38,8 +40,6 @@ function displayItems(){
 
 	})
 }		
-
-// afterConnection 12.2 06 read music
 
 function start(){
 	connection.query("SELECT * FROM products", function(err, res) {
